@@ -40,16 +40,16 @@
         </div>
 
         <div style="text-align: center; margin: 1.5rem 0; display: flex; justify-content: center; gap: 12px; flex-wrap: wrap;">
-        {% if site.resume_looking_for_work == 'yes' %}
-        <a href="mailto:{{ site.resume_contact_email }}" class="contact-button no-print" itemprop="email">Contact me</a>
-        {% endif %}
-
-        <button onclick="window.print()" 
-                class="contact-button no-print" 
-                style="background-color: #16a34a; border: none; cursor: pointer;">
-          ↓ Baixar PDF
-        </button>
-      </div>
+          {% if site.resume_looking_for_work == 'yes' %}
+          <a href="mailto:{{ site.resume_contact_email }}" class="contact-button no-print" itemprop="email">Contact me</a>
+          {% endif %}
+          
+          <button onclick="window.print()" 
+          class="contact-button no-print" 
+          style="background-color: #16a34a; border: none; cursor: pointer;">
+            ↓ Baixar PDF
+          </button>
+        </div>
 
       </header>
 

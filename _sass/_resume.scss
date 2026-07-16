@@ -200,13 +200,33 @@
   .no-print { display: none !important }
   .print-only { display: block !important }
   body { font-size: 12px; line-height: 1rem; }
-  .page-header { padding: 1rem 0 .2rem;
+
+  /* NEW: force browsers to keep backgrounds/gradients when printing */
+  * {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+    color-adjust: exact !important;
+  }
+
+  .page-header {
+    background: linear-gradient(135deg, #f8f9fa, #e9ecef) !important;
+    padding: 1rem 0 .2rem;
+
     .header-name {
       @include sans_bold;
       font-size: 2rem;
       margin: 0 0 .2rem;
+      background: linear-gradient(90deg, #2c3e50, #3498db) !important;
+      -webkit-background-clip: text !important;
+      -webkit-text-fill-color: transparent !important;
     }
   }
+
+  .contact-button {
+    background: #3498db !important;
+    color: white !important;
+  }
+
   .section-header {
     @include section_border_thin;
     margin-bottom: 1rem;
