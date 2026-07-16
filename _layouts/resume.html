@@ -44,11 +44,10 @@
           <a href="mailto:{{ site.resume_contact_email }}" class="contact-button no-print" itemprop="email">Contact me</a>
           {% endif %}
           
-          <button onclick="window.print()" 
-          class="contact-button no-print" 
-          style="border: none; cursor: pointer;">
-            ↓ PDF
-          </button>
+           <a href="{{ site.baseurl }}/images/maria_sofia_cv.pdf" 
+             class="contact-button no-print" 
+             download>↓ PDF</a>
+        </div>
         </div>
 
       </header>
