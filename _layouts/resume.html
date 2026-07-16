@@ -46,6 +46,9 @@
         {% else %}
         {% endif %}
 
+        <!-- PDF Download Button -->
+        <a href="/Blue Simple Professional CV Resume.pdf" class="contact-button no-print" style="margin-left: 12px; background-color: #16a34a;" download>↓ Baixar PDF</a>
+
       </header>
 
       {% if site.resume_section_experience %}
@@ -133,6 +136,22 @@
 
       </section>
       <!-- end Skills -->
+      {% endif %}
+
+      {% if site.resume_section_languages %}
+      <!-- begin Languages -->
+      <section class="content-section">
+        <header class="section-header">
+          <h2>Línguas</h2>
+        </header>
+        {% for lang in site.data.languages %}
+        <div class="resume-item">
+          <h4 class="resume-item-details">{{ lang.language }}</h4>
+          <p class="resume-item-copy">{{ lang.level }}</p>
+        </div>
+        {% endfor %}
+      </section>
+      <!-- end Languages -->
       {% endif %}
 
       {% if site.resume_section_recognition %}

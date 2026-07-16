@@ -232,3 +232,33 @@
     }
   }
 }
+
+.page-header {
+  background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+  border-radius: 8px;
+  padding: 2rem 1.5rem;
+}
+
+.header-name {
+  font-size: 2.8rem;
+  background: linear-gradient(90deg, #2c3e50, #3498db);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.contact-button {
+  background: #3498db;
+  color: white;
+  border: none;
+}
+
+.contact-button:hover {
+  background: #2980b9;
+  transform: translateY(-2px);
+}
+
+/* Better mobile */
+@media (max-width: 600px) {
+  .header-name { font-size: 2.2rem; }
+  .resume-item-title { font-size: 1.35rem; }
+}
